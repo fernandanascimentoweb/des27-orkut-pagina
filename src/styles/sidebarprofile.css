@@ -1,0 +1,56 @@
+.sidebar-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    gap: 30px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 370px;
+    padding: 10px;
+}
+
+.box img {
+    margin-top: 30px;
+    width: 184px;
+    height: 184px;
+    padding: 5px;
+    border: 4px solid #ED2590;
+    border-radius: 50%;
+}
+
+.box h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box p {
+    font-size: 16px;
+}
+
+
+.edit-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 80px;
+    color: #ED2590;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sidebar-card {
+        display: none;
+    }
+}

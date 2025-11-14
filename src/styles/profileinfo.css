@@ -1,0 +1,140 @@
+.profile-info {
+    width: 800px;
+    height: 1060px;
+}
+
+.profile-info h2 {
+    font-size: 20px;
+}
+
+/* ficar tipo um pensamento */
+.quote {
+    margin-top: 20px;
+    background-color: #EFF3F8;
+    padding: 15px 20px;
+    border-radius: 8px;
+
+    position: relative;
+    font-size: 15px;
+    color: #333;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    top: -10px;     /* sobe a seta */
+    left: 20px;     /* posição embaixo do h2 */
+    
+    width: 0;
+    height: 0;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #EFF3F8; /* mesma cor do fundo */
+}
+
+.info-icons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+
+.icons-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.icons-card p {
+    font-size: 14px;
+}
+
+.icons-card img {
+    width: 20px;
+}
+
+.card-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-text p {
+    font-size: 12px;
+}
+
+.info-list {
+    margin-top: 40px;
+}
+
+.info-list strong {
+    color: #c5c5c5;
+    font-size: 16px;
+}
+
+.info-list p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.tag-box {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    padding: 10px;
+}
+
+.tag {
+    border: 2px solid #ED2590;
+    border-radius: 30px;
+    padding: 8px 10px;
+}
+
+.pink {
+    color: #ED2590;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .profile-info {
+        width: 300px;
+    }
+
+    .profile-info h2 {
+        font-size: 16px;
+    }
+
+    .quote {
+        font-size: 14px;
+    }
+
+    .info-icons {
+        gap: 10px;
+    }
+    .card-text {
+        gap: 10px;
+    }   
+    .card-text img {
+        width: 12px;
+    }
+    .card-text p {
+        font-size: 10px;
+    }
+
+    .info-list p {
+        font-size: 12px;
+    }
+
+    .info-list strong{
+        font-size: 12px;
+    }
+
+    .tag-box {
+        gap: 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
